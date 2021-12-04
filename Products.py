@@ -17,5 +17,8 @@ while True:
     p=[name,price]
     Products.append(p)
     
+for p in Products:
+    print(p[0], '的價格是', p[1])
+    
 print(Products)
 print(Products[0])
