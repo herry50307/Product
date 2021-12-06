@@ -20,5 +20,9 @@ while True:
 for p in Products:
     print(p[0], '的價格是', p[1])
     
+with open('products.csv','w') as f:
+    for p in Products:
+        f.write(p[0] +',' + p[1] + '\n')
+        
 print(Products)
 print(Products[0])
