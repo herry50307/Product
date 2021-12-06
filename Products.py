@@ -5,6 +5,16 @@ Created on Sat Dec  4 16:14:24 2021
 @author: DSC Handsome
 """
 
+Products_read=[]
+with open('products.csv','r', encoding='utf-8') as f:
+    for line in f:
+        name,price = line.strip().split(',')
+        Products_read.append([name,price])
+print(Products_read)
+        
+
+
+
 
 
 Products=[]
